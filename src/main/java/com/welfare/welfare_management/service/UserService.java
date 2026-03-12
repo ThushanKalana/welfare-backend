@@ -346,7 +346,7 @@ public class UserService {
         otpStore.put(nic, otp);
         otpExpiry.put(nic, System.currentTimeMillis() + (5 * 60 * 1000)); // 5 min expiry
         // Send OTP via email
-        emailService.sendOtpEmail(user.getEmail(), otp);
+        // emailService.sendOtpEmail(user.getEmail(), otp);
         // Fix #2: no trailing spaces in keys
         response.put("message", "OTP sent to your email");
         response.put("status", user.isActive());
