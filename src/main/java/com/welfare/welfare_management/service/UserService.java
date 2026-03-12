@@ -348,7 +348,7 @@ public class UserService {
         // Send OTP via email
         // emailService.sendOtpEmail(user.getEmail(), otp);
         System.out.println("GN Request OTP "+ otp);
-        System
+
         // Fix #2: no trailing spaces in keys
         response.put("message", "OTP sent to your email");
         response.put("status", user.isActive());
